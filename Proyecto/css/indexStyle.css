@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Arimo&family=Playfair+Display&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/jslogo.png");
+   display: block;
+}
+header{
+    background-color: #243A73;
+    width: 100%;
+    height: 150px;
+    border: none;
+    box-sizing: border-box;
+}
+header div{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    top: 10%;
+    margin-left: 0.5% ;
+}
+header :first-child{
+    top: -4%;
+}
+
+header div>h1{
+text-align: justify;
+color: white;
+font-family: 'Playfair Display', serif;
+}
+header div> img{
+    width: 100px;
+    height: 100px;
+}
+.article{
+    position: relative;
+    left: 25%;
+    top: 25px;
+    width: 600px;
+    border: 4px solid;
+    background-color: #E5E0FF;
+  
+}
+.section{
+  box-sizing: border-box;
+    height: 908px;
+    border: none;
+}
+.article  div>h1,h2,h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Arimo', sans-serif;
+}
+.datos , .codigo{
+    display: inline-block;
+    position: relative;
+    left: 7%;
+    font-size: 20px;
+}
+.codigo{
+    left: 40%;
+}
+.documento{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 150px;
+    font-size: 20px;
+    background-color: #E5E0FF ;
+    border: 10px ridge;
+    box-sizing: border-box;
+   }
+.documento h2{
+  position: relative;
+  right: 5%;
+}
+.documento ul{
+   position: relative;
+    top: 10%;
+    padding-left: 5%;
+}
+footer{
+    box-sizing: border-box;
+     width: 100%;
+     height: 90px;
+     background-color: #434242;
+     overflow: hidden;
+}
+footer h2{
+    font-size: 15px;
+    text-align: end;
+    padding-top: 65px;
+}
+
+
+
+

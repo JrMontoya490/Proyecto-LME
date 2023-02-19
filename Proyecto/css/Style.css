@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: #FCFDF2;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:  #243A73;
+    padding-top: 35px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+header button{
+    position: relative;
+    right: 46%;
+    text-decoration: none;
+}
+section{
+ margin-top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width:90%;
+    box-sizing: border-box;
+    border: 10px groove ;
+    padding: 1%;
+}
+.intro{
+    text-align: justify;
+    font-size: 20px;
+}
+.if h1{
+    text-align: center;
+    font-size: 25px;
+}
+.if h2{
+    text-align: justify;
+    font-size: 22px;
+}
+.if h3{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.if p{
+    text-align: justify;
+    font-size: 20px;
+}
+.ejemplo{
+   width: 96%;
+    background-color: #1B2430;
+    color: white;
+}
+footer{
+    box-sizing: border-box;
+     width: 100%;
+     height: 90px;
+     background-color: #434242;
+     overflow: hidden;
+}
+footer h2{
+    font-size: 15px;
+    text-align: end;
+    padding-top: 65px;
+}
+
