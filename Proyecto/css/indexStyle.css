@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Arimo&family=Playfair+Display&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap);
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-image: url("../img/jslogo.png");
-   display: block;
+	background: rgba(0,0,0,0.5) url("../img/jslogo.png");
+	background-blend-mode: darken;
+	display: block;
 }
 header{
     background-color: #243A73;
@@ -15,33 +18,42 @@ header{
     border: none;
     box-sizing: border-box;
 }
+
 header div{
     display: inline-block;
     position: relative;
     left: 40%;
     top: 10%;
     margin-left: 0.5% ;
+  transition: 1s;
 }
-header :first-child{
+
+header div:nth-child(2):hover{
+  transform:scale(1.3);
+}
+header:first-child{
     top: -4%;
 }
 
-header div>h1{
+header div > h1{
 text-align: justify;
 color: white;
 font-family: 'Playfair Display', serif;
 }
-header div> img{
+header div a > img{
     width: 100px;
     height: 100px;
 }
 .article{
+  margin: 0 auto;
     position: relative;
-    left: 25%;
     top: 25px;
-    width: 600px;
+    width: 55%;
+  height: 280px;
     border: 4px solid;
+  border-radius: 10px;
     background-color: #E5E0FF;
+  padding: 10px;
   
 }
 .section{
@@ -50,10 +62,32 @@ header div> img{
     border: none;
 }
 .article  div>h1,h2,h3{
+  margin-top: 8px;
     text-align: center;
     font-size: 30px;
     font-family: 'Arimo', sans-serif;
 }
+
+.article ul{
+	float: left;
+}
+
+pre{
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+.article ul li{
+	transition: 0.2s;
+}
+
+.article ul li:hover{
+	background-color: lightgrey;
+	border-style: dotted;
+	border-radius: 7px;
+	padding: 3px;
+	transform: scale(1.1);
+}
+
 .datos , .codigo{
     display: inline-block;
     position: relative;
@@ -64,37 +98,57 @@ header div> img{
     left: 40%;
 }
 .documento{
-    width: 100%;
-    height: 300px;
+  margin: 0 auto;
+    width: 75%;
+    height: auto;
     position: relative;
     top: 150px;
     font-size: 20px;
     background-color: #E5E0FF ;
     border: 10px ridge;
+  border-radius: 70px;
     box-sizing: border-box;
+  padding: 10px;
    }
 .documento h2{
   position: relative;
-  right: 5%;
+  margin: 0 auto;
 }
 .documento ul{
    position: relative;
     top: 10%;
     padding-left: 5%;
+  list-style-type: none;
 }
+
 footer{
     box-sizing: border-box;
      width: 100%;
-     height: 90px;
+     height: auto;
      background-color: #434242;
      overflow: hidden;
 }
 footer h2{
     font-size: 15px;
     text-align: end;
-    padding-top: 65px;
+	margin: 1.5% 5% 1.5% 20%;
 }
 
+.datos h4{
+  margin-top: 10px;
+  word-spacing: 400px;
+}
 
+.documento ul li{
+  margin: 8px 10% 0 auto;
+}
 
+li a{
+  text-decoration:none;
+  color:darkcyan;
+  font-weight:bold;
+}
 
+li a:hover{
+  text-decoration:underline;
+}

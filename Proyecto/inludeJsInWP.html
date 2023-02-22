@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo3y4.css">
+    <title>Como incluir JavaScript en una Página Web</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div id="cabecera">
+            <a href="Index.html">Volver</a>
+            <h2>Incluyendo JavaScript en Páginas Web</h2>
+        </div>
+    </header>
+    <section class="contenedor">
+        <aside class="panel">
+            <nav>
+                <ul>
+                    <li>Índice</li>
+                    <li><a href="#primera">Agregar JavaScript directamente en el archivo HTML</a></li>
+                    <li><a href="#segunda">Agregar JavaScript como atributo en las etiquetas de HTML</a></li>
+                    <li><a href="#tercera">Agregar JavaScript como archivo separado</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <article class="contenido">
+            <div id="tema">
+                <h2>Como incluir JavaScript en HTML</h2>
+                <img src="img/includeJS.webp" alt="">
+                <p>
+                    Para poder incluir o conectar JavaScript a alguno de nuestros proyectos HTML, 
+                    debemos tener en cuenta que podemos hacerlo de tres formas distinta y dos de 
+                    ellas comparten el mismo concepto de inclusión.
+                </p>
+            </div>
+            <div id="subtemas">
+                <h2 id="primera">1. Agregar JavaScript directamente en el archivo HTML</h2>
+                <p>
+                    La primera forma consiste en agregar JavaScript de forma directa en el archivo HTML 
+                    junto con su estructura, para ello debemos escribir la siguiente etiqueta 
+                    <b>&ltscript&gt&lt/script&gt</b>, su función es similar a la etiqueta <b>&ltstyle&gt&lt/style&gt</b>
+                    Dentro de la etiqueta iremos añadiendo todas las funciones que necesitemos de JavaScript.
+                    <br><br><b>¿En qué parte debo agregar le etiqueta?</b><br><br>Se estiman dos opciones que 
+                    según se estima brinda ciertas ventajas.<br><br>La primera de ellas consiste en agregar la 
+                    etiqueta dentro de la sección de &lthead&gt y pueda permanecer separado del contenido.
+                </p>
+                <h4>Estructura:</h4>
+                <div>
+                    <img src="img/incPE.png" alt="">
+                </div>
+                <h4>Resultado:</h4>
+                <div>
+                    <img src="img/incPR.png" alt="">
+                </div>
+                <p>
+                    La segunda consiste en agregar la etiqueta dentro de la sección <b>&ltbody&gt</b>, esta opción nos puede 
+                    ayudar a mejorar la velocidad de carga, donde se estima el contenido web se cargará más rápido 
+                    y seguido a eso el script empezará a procesar su contenido.
+                </p>
+                <h4>Estructura:</h4>
+                <div>
+                    <img src="img/incSE.png" alt="">
+                </div>
+                <h4>Resultado:</h4>
+                <div>
+                    <img src="img/incSR.png" alt="">
+                </div>
+                <p>
+                    Como podemos observar hay un par de diferencias, las cuales son simplemente estéticas pero 
+                    todo radica en el posicionamiento de la etiqueta en las diferentes secciones, si la posicionamos 
+                    al principio de la sección se nos mostrará con un fondo claro o blanco, pero si la posicionamos 
+                    al final, se nos mostrará con un fondo obscuro u opaco.
+                </p>
+            </div>
+            <div id="subtemas">
+                <h2 id="segunda">2. Agregar JavaScript como atributo en las etiquetas de HTML</h2>
+                <p>
+                    La segunda forma de como insertar JavaScript en nuestros HTML es por medio de atributos 
+                    para las diferentes etiquetas que ya posee HTML, pero se tiene que cumplir la condición 
+                    de que el atributo debe ser en la mayoría de los casos de tipo “Event”, como <b>onclick</b> ya 
+                    que estos proceden de la estructura JavaScript.
+                </p>
+                <div>
+                    <img src="img/incAC.png" alt="">
+                </div>
+                <div>
+                    <img src="img/incAR.png" alt="">
+                </div>
+            </div>
+            <div id="subtemas">
+                <h2 id="tercera">3. Agregar JavaScript como archivo separado</h2>
+                <p>
+                    Así como los atributos y selectores insertados con la etiqueta de estilos en el mismo archivo HTML 
+                    que nos parece un poco desordenado y muy poco practico a la hora de crear una pagina web con mucho 
+                    contenido que a su vez será para realizar tareas complejas, como un portal de estudiantes, 
+                    empleados, registro de bancos, etc. Imagínate como sería si a esto le añadimos la sintaxis de 
+                    JavaScript…<br><br>Estamos de acuerdo que no es algo muy sencillo de manejar, por esa razón tanto 
+                    CSS y JavaScript tienen soporte para tener su sintaxis en un archivo aparte, en este caso JavaScript 
+                    puede desarrollarse en su propio documento con una extensión <b>.js</b>, de igual forma, debemos especificar 
+                    su ruta de destino así:<br><br><b>&ltscript src=”archivo.js”&gt&lt/script&gt</b><br><br>Dejarlo en la carpeta 
+                    raíz no es lo más idóneo por cuestiones de orden así también debe tener su propia carpeta que comúnmente 
+                    la mayoría le pone por nombre “js”.<br><br>Ejemplo:
+                </p>
+                <div>
+                    <img src="img/incASC.png" alt="">
+                </div>
+                <div>
+                    <img src="img/incASR.png" alt="">
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="js">
+        <button id='ejecuta'>Prueba Archivo JS</button>
+        <script src="js/otroScript.js"></script>
+    </section>
+    <footer>
+        <h2>LME 01T, Universidad Don Bosco. 2023</h2>
+    </footer>
+</body>
+</html>
